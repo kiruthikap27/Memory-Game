@@ -26,7 +26,9 @@ function handleInitialLoad() {
   //set shuffled image in the attribute
   totalAnimalGrid?.forEach((item, index) => {
     const card = document.getElementById(`card-${index}`);
-    card.setAttribute("data-image", `assets/${item}`);
+    if (card) {
+      card.setAttribute("data-image", `assets/${item}`);
+    }
   });
 
   document.querySelectorAll(".card")?.forEach((card) => {
