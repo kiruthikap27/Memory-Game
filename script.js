@@ -22,11 +22,10 @@ function handleInitialLoad() {
       totalAnimalGrid[index],
     ];
   });
-  console.log("test", { totalAnimalGrid });
+
   //set shuffled image in the attribute
   totalAnimalGrid?.forEach((item, index) => {
     const card = document.getElementById(`card-${index}`);
-    console.log("test", { card, index });
     card.setAttribute("data-image", `assets/${item}`);
   });
 
