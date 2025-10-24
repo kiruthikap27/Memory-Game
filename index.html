@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Memory Game</title>
+  </head>
+  <body onload="handleInitialLoad()">
+    <div class="container">
+      <div class="header">
+        <h1>Welcome to the Memory Game</h1>
+        <h2 id="winner">Congratulations You win the game! 🎉</h2>
+        <button onClick="handleReset()">Reset</button>
+      </div>
+      <div class="grid">
+        <div class="card" id="card-0" onclick="handleFlipCard('card-0')">
+          <img src="assets/squareImage.png" alt="bear" />
+        </div>
+        <div class="card" id="card-1" onclick="handleFlipCard('card-1')">
+          <img src="assets/squareImage.png" alt="bee" />
+        </div>
+        <div class="card" id="card-2" onclick="handleFlipCard('card-2')">
+          <img src="assets/squareImage.png" alt="koala" />
+        </div>
+        <div class="card" id="card-3" onclick="handleFlipCard('card-3')">
+          <img src="assets/squareImage.png" alt="lion" />
+        </div>
+        <div class="card" id="card-4" onclick="handleFlipCard('card-4')">
+          <img src="assets/squareImage.png" alt="owl" />
+        </div>
+        <div class="card" id="card-5" onclick="handleFlipCard('card-5')">
+          <img src="assets/squareImage.png" alt="panda" />
+        </div>
+        <div class="card" id="card-6" onclick="handleFlipCard('card-6')">
+          <img src="assets/squareImage.png" alt="tiger" />
+        </div>
+        <div class="card" id="card-7" onclick="handleFlipCard('card-7')">
+          <img src="assets/squareImage.png" alt="turtle" />
+        </div>
+        <div class="card" id="card-8" onclick="handleFlipCard('card-8')">
+          <img src="assets/squareImage.png" alt="bear" />
+        </div>
+        <div class="card" id="card-9" onclick="handleFlipCard('card-9')">
+          <img src="assets/squareImage.png" alt="bee" />
+        </div>
+        <div class="card" id="card-10" onclick="handleFlipCard('card-10')">
+          <img src="assets/squareImage.png" alt="koala" />
+        </div>
+        <div class="card" id="card-11" onclick="handleFlipCard('card-11')">
+          <img src="assets/squareImage.png" alt="lion" />
+        </div>
+        <div class="card" id="card-12" onclick="handleFlipCard('card-12')">
+          <img src="assets/squareImage.png" alt="owl" />
+        </div>
+        <div class="card" id="card-13" onclick="handleFlipCard('card-13')">
+          <img src="assets/squareImage.png" alt="panda" />
+        </div>
+        <div class="card" id="card-14" onclick="handleFlipCard('card-14')">
+          <img src="assets/squareImage.png" alt="tiger" />
+        </div>
+        <div class="card" id="card-15" onclick="handleFlipCard('card-15')">
+          <img src="assets/squareImage.png" alt="turtle" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
