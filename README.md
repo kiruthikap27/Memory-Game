@@ -5,7 +5,7 @@ A fun and interactive memory card game built with modern web technologies.
 ## 🌟 Features
 
 - Classic memory matching gameplay
-- Beautiful card designs
+- Beautiful card designs with animal theme
 - Responsive design for all devices
 - animations
 
