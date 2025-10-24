@@ -1,15 +1,17 @@
-body {
-  background: linear-gradient(to right, #22c1c3, #fdbb2d);
-}
-
-body,
-button {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-size: 1.75rem;
   font-family: "poppins", sans-serif;
 }
 
+body {
+  background: linear-gradient(to right, #22c1c3, #fdbb2d);
+}
+
 .container {
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -28,12 +30,13 @@ button {
   width: 200px;
   background-color: green;
   margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 .grid {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: 0fr 0fr 0fr 0fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 100px;
   justify-content: center;
   padding: 50px;
@@ -43,11 +46,12 @@ button {
   width: 150px;
   height: 150px;
   cursor: pointer;
-  img {
-    width: 150px;
-    height: 150px;
-    transition: transform 0.4s;
-  }
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.4s;
 }
 
 .card.matched {
