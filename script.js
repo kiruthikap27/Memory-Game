@@ -81,13 +81,12 @@ function handleFlipCard(cardId) {
         const lastFlippedCardImage = lastFlippedCard.querySelector("img");
         lastFlippedCardImage.src = "assets/squareImage.png";
         image.src = "assets/squareImage.png";
-      }, 500);
+      }, 800);
       setTimeout(() => {
         removeClassName("rotate");
-      }, 600);
+      }, 900);
     } else {
       addClassName("matched");
-
       setTimeout(() => {
         removeClassName("rotate");
         if (document.querySelectorAll(".matched")?.length === 16) {
