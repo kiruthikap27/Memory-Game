@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-family: "poppins", sans-serif;
 }
 
@@ -24,33 +24,35 @@ body {
   justify-content: center;
   margin-top: 50px;
   text-shadow: 2px 2px 5px greenyellow;
+  text-align: center;
 }
 
 .header button {
-  width: 200px;
+  width: 100px;
   background-color: green;
   margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: 0.85rem;
 }
 
 .grid {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 100px;
+  grid-template-columns: repeat(4, 0.1fr);
+  gap: 20px;
   justify-content: center;
-  padding: 50px;
+  padding: 30px;
 }
 
 .card {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
 }
 
 .card img {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
   transition: transform 0.4s;
 }
 
@@ -66,9 +68,24 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 940px) {
+  .grid {
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 20px;
+  }
+
+  .header {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 630px) {
   body {
     font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 40px;
   }
 
   .header {
@@ -77,33 +94,65 @@ body {
   }
 
   .header button {
-    width: 150px;
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .card {
     width: 100px;
-    height: 100px;
-  }
-
-  .card img {
-    width: 100px;
-    height: 100px;
   }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 460px) {
+  body {
+    font-size: 1rem;
+  }
+
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 15px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .card {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header button {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  * {
+    font-size: 1rem !important;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 0.1fr);
     gap: 40px;
   }
 
   .header {
     text-align: center;
+  }
+
+  .card {
+    width: 55px;
+    height: 55px;
+  }
+
+  .card img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .header button {
+    width: 60px;
+    font-size: 0.8rem !important;
   }
 }
