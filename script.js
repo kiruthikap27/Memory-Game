@@ -81,10 +81,10 @@ function handleFlipCard(cardId) {
         const lastFlippedCardImage = lastFlippedCard.querySelector("img");
         lastFlippedCardImage.src = "assets/squareImage.png";
         image.src = "assets/squareImage.png";
-      }, 800);
+      }, 900);
       setTimeout(() => {
         removeClassName("rotate");
-      }, 900);
+      }, 1000);
     } else {
       addClassName("matched");
       setTimeout(() => {
