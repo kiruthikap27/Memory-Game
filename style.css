@@ -105,7 +105,7 @@ body {
 
   .grid {
     grid-template-columns: repeat(4, 0.1fr);
-    gap: 15px;
+    gap: 20px;
   }
 
   .header {
@@ -113,13 +113,13 @@ body {
   }
 
   .card {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
   }
 
   .card img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
   }
 
   .header button {
