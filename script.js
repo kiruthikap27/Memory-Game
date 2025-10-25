@@ -13,22 +13,18 @@ function handleInitialLoad() {
   const totalAnimalGrid = [...animals, ...animals];
 
   //shuffle images
-  totalAnimalGrid?.forEach((_, index) => {
-    const count = Math.floor(
-      Math.random() * (totalAnimalGrid?.length - index) + 1
-    );
-    [totalAnimalGrid[index], totalAnimalGrid[count]] = [
-      totalAnimalGrid[count],
-      totalAnimalGrid[index],
+  for (let i = totalAnimalGrid.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [totalAnimalGrid[i], totalAnimalGrid[j]] = [
+      totalAnimalGrid[j],
+      totalAnimalGrid[i],
     ];
-  });
+  }
 
   //set shuffled image in the attribute
   totalAnimalGrid?.forEach((item, index) => {
     const card = document.getElementById(`card-${index}`);
-    if (card) {
-      card.setAttribute("data-image", `assets/${item}`);
-    }
+    card.setAttribute("data-image", `assets/${item}`);
   });
 
   document.querySelectorAll(".card")?.forEach((card) => {
